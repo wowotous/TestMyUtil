@@ -29,8 +29,9 @@ android {
 }
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    configurations.all {
-        resolutionStrategy.force 'com.android.support:support-annotations:26.1.0'
+    /*重要的是这一步骤*/
+    androidTestCompile('com.android.support:support-annotations:26.1.0') {
+        force = true
     }
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
@@ -39,13 +40,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-
     //noinspection GradleCompatible
     compile "com.android.support:recyclerview-v7:27.1.1"
     compile "io.reactivex.rxjava2:rxjava:2.0.5"
     compile "io.reactivex.rxjava2:rxandroid:2.0.1"
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.5'
     implementation files('libs/ksoap2-android.jar')
     compile 'com.jaeger.statusbarutil:library:1.5.1'
 }

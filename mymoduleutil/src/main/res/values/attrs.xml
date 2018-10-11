@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="picture.title.textColor" format="reference|color" />
-    <attr name="picture.right.textColor" format="reference|color" />
-    <attr name="picture.leftBack.icon" format="reference" />
-    <attr name="picture.arrow_down.icon" format="reference" />
-    <attr name="picture.arrow_up.icon" format="reference" />
-    <attr name="picture.num.style" format="reference" />
-    <attr name="picture.checked.style" format="reference" />
-    <attr name="picture.bottom.bg" format="reference|color" />
-    <attr name="picture.preview.textColor" format="reference|color" />
-    <attr name="picture.complete.textColor" format="reference|color" />
-    <attr name="picture.ac_preview.title.textColor" format="reference|color" />
-    <attr name="picture.ac_preview.complete.textColor" format="reference|color" />
-    <attr name="picture.ac_preview.bottom.bg" format="reference|color" />
-    <attr name="picture.status.color" format="reference|color" />
-    <attr name="picture.ac_preview.title.bg" format="reference|color" />
-    <attr name="picture.preview.leftBack.icon" format="reference" />
-    <attr name="picture.statusFontColor" format="boolean" />
-    <attr name="picture.style.numComplete" format="boolean" />
-    <attr name="picture.style.checkNumMode" format="boolean" />
-    <attr name="picture.crop.toolbar.bg" format="reference|color" />
-    <attr name="picture.crop.status.color" format="reference|color" />
-    <attr name="picture.crop.title.color" format="reference|color" />
-    <attr name="picture.folder_checked_dot" format="reference" />
 
     <declare-styleable name="NiceSpinner">
         <attr name="arrowTint" format="color" />
@@ -33,35 +10,5 @@
         <attr name="niceSpinnerBackgroundSelector" format="reference"/>
         <attr name="textTint" format="color"/>
     </declare-styleable>
-    <declare-styleable name="ucrop_UCropView">
 
-        <!--Crop image view-->
-        <attr name="ucrop_aspect_ratio_x" format="float"/>
-        <attr name="ucrop_aspect_ratio_y" format="float"/>
-
-        <!--Overlay view-->
-        <attr name="ucrop_show_oval_crop_frame" format="boolean"/>
-        <attr name="ucrop_circle_dimmed_layer" format="boolean"/>
-        <attr name="ucrop_dimmed_color" format="color"/>
-
-        <attr name="ucrop_grid_stroke_size" format="dimension"/>
-        <attr name="ucrop_grid_color" format="color"/>
-        <attr name="ucrop_grid_row_count" format="integer"/>
-        <attr name="ucrop_grid_column_count" format="integer"/>
-        <attr name="ucrop_show_grid" format="boolean"/>
-
-        <attr name="ucrop_frame_stroke_size" format="dimension"/>
-        <attr name="ucrop_frame_color" format="color"/>
-        <attr name="ucrop_show_frame" format="boolean"/>
-
-    </declare-styleable>
-
-    <declare-styleable name="ucrop_AspectRatioTextView">
-
-        <attr name="ucrop_artv_ratio_title" format="string"/>
-
-        <attr name="ucrop_artv_ratio_x" format="float"/>
-        <attr name="ucrop_artv_ratio_y" format="float"/>
-
-    </declare-styleable>
 </resources>
