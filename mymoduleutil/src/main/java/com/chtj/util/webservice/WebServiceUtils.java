@@ -13,6 +13,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -22,15 +23,21 @@ import java.util.concurrent.Executors;
  */
 
 public class WebServiceUtils {
-    public static final String WEB_SERVER_URL = "http://www.webxml.com.cn/WebServices/WeatherWebService.asmx";
+    /**
+     * 服务器地址+端口+接口
+     */
+    public static  String WEB_SERVER_URL = "http://www.webxml.com.cn/WebServices/WeatherWebService.asmx";
 
 
-    // 含有3个线程的线程池
-    private static final ExecutorService executorService = Executors
-            .newFixedThreadPool(3);
+    /**
+     *含有3个线程的线程池
+     */
+    private static  ExecutorService executorService = Executors.newFixedThreadPool(3);
 
-    // 命名空间
-    private static final String NAMESPACE = "http://WebXml.com.cn/";
+    /**
+     * 命名空间
+     */
+    private static  String NAMESPACE = "http://WebXml.com.cn/";
 
     /**
      *
@@ -44,7 +51,7 @@ public class WebServiceUtils {
      *            回调接口
      */
     public static void callWebService(String url, final String methodName,
-                                      HashMap<String, String> properties,
+                                      LinkedHashMap<String, String> properties,
                                       final WebServiceCallBack webServiceCallBack) {
         // 创建HttpTransportSE对象，传递WebService服务器地址
         final HttpTransportSE httpTransportSE = new HttpTransportSE(url);

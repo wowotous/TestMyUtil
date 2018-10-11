@@ -4,10 +4,6 @@ import android.app.Activity;
 import android.util.DisplayMetrics;
 import android.view.View;
 
-/**
- * Created by Administrator on 2018/8/23.
- */
-
 public class PixelUtil {//获取运行屏幕宽度
 
     public static int getScreenWidth(Activity context) {

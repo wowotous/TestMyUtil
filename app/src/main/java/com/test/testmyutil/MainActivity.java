@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 
 import com.chtj.util.nicespinner.NiceSpinner;
+import com.chtj.util.webservice.WebServiceUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         niceSpinner=findViewById(R.id.tv_value);
         niceSpinner.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_selectable_list_item, spinnerItem));
-
 
     }
 }

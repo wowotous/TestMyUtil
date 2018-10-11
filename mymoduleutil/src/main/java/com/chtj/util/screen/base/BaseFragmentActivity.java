@@ -15,15 +15,6 @@ import com.chtj.util.screen.util.ScreenUtils;
 import com.example.mymoduleutil.R;
 import com.jaeger.library.StatusBarUtil;
 
-
-/**
- * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2016/10/24
- *     desc  : base about activity
- * </pre>
- */
 public abstract class BaseFragmentActivity extends FragmentActivity{
 
 

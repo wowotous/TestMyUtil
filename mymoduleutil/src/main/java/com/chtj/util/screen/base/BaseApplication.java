@@ -5,14 +5,6 @@ import android.app.Application;
 import android.os.Bundle;
 import android.util.Log;
 
-/**
- * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2017/03/30
- *     desc  : base about application
- * </pre>
- */
 public class BaseApplication extends Application {
 
     private static final String TAG = "BaseApplication";

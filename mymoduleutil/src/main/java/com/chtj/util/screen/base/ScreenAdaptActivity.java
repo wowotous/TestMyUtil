@@ -13,15 +13,6 @@ import com.chtj.util.screen.util.ScreenUtils;
 import com.chtj.util.screen.util.ToastUtils;
 import com.example.mymoduleutil.R;
 
-
-/**
- * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2016/09/27
- *     desc  : demo about ScreenUtils
- * </pre>
- */
 public class ScreenAdaptActivity extends BaseActivity {
 
     private TextView tvUp;

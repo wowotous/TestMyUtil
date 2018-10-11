@@ -14,14 +14,6 @@ import com.chtj.util.screen.util.PermissionUtils;
 import com.example.mymoduleutil.R;
 
 
-/**
- * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2018/01/10
- *     desc  : helper about dialog
- * </pre>
- */
 public class DialogHelper {
 
     public static void showRationaleDialog(final PermissionUtils.OnRationaleListener.ShouldRequest shouldRequest) {

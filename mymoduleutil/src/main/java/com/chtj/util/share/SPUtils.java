@@ -6,12 +6,6 @@ import android.content.SharedPreferences;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Map;
-
-/**
- * Created by tingjian on 2017/7/26 17:30.
- * QQ Email:676774328@qq.com
- */
-
 public class SPUtils {
     /**
      * 保存在手机里面的文件名

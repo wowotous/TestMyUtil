@@ -15,14 +15,6 @@ import android.widget.FrameLayout;
 
 import java.lang.reflect.Field;
 
-/**
- * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2016/08/02
- *     desc  : utils about keyboard
- * </pre>
- */
 public final class KeyboardUtils {
 
     private static int                        sDecorViewInvisibleHeightPre;

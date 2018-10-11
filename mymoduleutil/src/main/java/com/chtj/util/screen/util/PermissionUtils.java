@@ -26,14 +26,6 @@ import java.util.Set;
 
 import static com.chtj.util.screen.constant.PermissionConstants.Permission;
 
-/**
- * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2017/12/29
- *     desc  : utils about permission
- * </pre>
- */
 public final class PermissionUtils {
 
     private static final List<String> PERMISSIONS = getPermissions();

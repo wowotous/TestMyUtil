@@ -13,14 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * <pre>
- *     author: Blankj
- *     blog  : http://blankj.com
- *     time  : 2017/03/28
- *     desc  : base about v4-fragment
- * </pre>
- */
 public abstract class BaseFragment extends Fragment
         implements IBaseView {
 
