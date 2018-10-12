@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 
+import com.chtj.util.load.LoadingDialog;
 import com.chtj.util.screen.util.ScreenUtils;
 import com.example.mymoduleutil.R;
 import com.jaeger.library.StatusBarUtil;
@@ -19,6 +20,27 @@ public abstract class BaseActivity extends AppCompatActivity
     protected View     mContentView;
     protected Activity mActivity;
 
+    public LoadingDialog loadingDialog;//菊花模态加载框
+
+    /**
+     * 初始化菊花模态加载框
+     */
+    public void initLoadingDialog(){
+        loadingDialog = new LoadingDialog();
+        loadingDialog.createLoadingDialog(this);
+    }
+    /**
+     * 显示模态框
+     */
+    protected void showDialog(){
+        loadingDialog.showDialog();
+    }
+    /**
+     * 关闭模态框
+     */
+    protected void closeDialog(){
+        loadingDialog.closeDialog();
+    }
     /**
      * 上次点击时间
      */
@@ -33,8 +55,8 @@ public abstract class BaseActivity extends AppCompatActivity
         StatusBarUtil.setColor(this, color, 30);
         //mToolbar.setBackgroundColor(color);
         StatusBarUtil.setLightMode(this);
-
         StatusBarUtil.setTransparent(this);
+        initLoadingDialog();//初始化LoadingDialog
         mActivity = this;
         Bundle bundle = getIntent().getExtras();
         initData(bundle);
@@ -67,4 +89,7 @@ public abstract class BaseActivity extends AppCompatActivity
     public void onClick(final View view) {
         if (!isFastClick()) onWidgetClick(view);
     }
+
+
+
 }

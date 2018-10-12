@@ -1,6 +1,7 @@
 package com.chtj.util.pixe;
 
 import android.app.Activity;
+import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.View;
 
@@ -34,6 +35,21 @@ public class PixelUtil {//获取运行屏幕宽度
 
     //PX转DP
     public static int px2dp(Activity context, float pxValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (pxValue / scale + 0.5f);
+    }
+    /**
+     * dp2px
+     */
+    public static int dip2px(Context context, float dpValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
+    }
+
+    /**
+     * px2dp
+     */
+    public static int px2dip(Context context, float pxValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (pxValue / scale + 0.5f);
     }

@@ -45,6 +45,11 @@ dependencies {
     compile "com.android.support:recyclerview-v7:27.1.1"
     compile "io.reactivex.rxjava2:rxjava:2.0.5"
     compile "io.reactivex.rxjava2:rxandroid:2.0.1"
+
+    compile 'com.wang.avi:library:2.1.3'
+
+    //cardView包
+    compileOnly 'com.android.support:cardview-v7:27.1.1'
     api 'com.github.bumptech.glide:glide:4.8.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
     //gson
@@ -59,7 +64,7 @@ publish {
     userOrg = 'chtj'//bintray.com用户名
     groupId = 'com.chtj.mymoduleutil'//jcenter上的路径
     artifactId = 'mymoduleutil'//项目名称
-    publishVersion = '1.0.2'//版本号
+    publishVersion = '1.0.3'//版本号
     desc = 'Oh hi, this is a nice description for a project, right?'//描述，不重要
     website = 'https://github.com/chtj_wave/mymoduleutil'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }

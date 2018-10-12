@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="com.test.testmyutil.MainActivity">
 
 
     <com.chtj.util.nicespinner.NiceSpinner
         android:id="@+id/tv_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
         android:layout_margin="10dp"
-        android:layout_weight="1"
         android:gravity="center"
         android:text="sdlfjlskdjf"
         android:textColor="@color/content_color"
         android:textSize="12sp" />
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_load"
+        android:layout_width="200dp"
+        android:text="Loadding显示"
+        android:layout_margin="10dp"
+        android:layout_height="80dp" />
+    <Button
+        android:id="@+id/btn_permissions"
+        android:layout_width="200dp"
+        android:text="6.0权限申请"
+        android:layout_margin="10dp"
+        android:layout_height="80dp" />
+</LinearLayout>
