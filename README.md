@@ -1,7 +1,8 @@
 # TestMyUtil
 ## 引用方式
 
-[plain] implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.2'
+[plain] 
+implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.2'
 
 <dependency>
   <groupId>com.chtj.mymoduleutil</groupId>
