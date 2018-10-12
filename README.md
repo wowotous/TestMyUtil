@@ -20,7 +20,7 @@ BaseFragmentActivity,
 
 可直接进行调用，无需配置
 
-### 下拉菜单
+-+  ### 下拉菜单
 NiceSpinner
 <com.chtj.util.nicespinner.NiceSpinner
         android:id="@+id/tv_value"
