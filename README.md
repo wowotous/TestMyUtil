@@ -1,6 +1,16 @@
 # TestMyUtil
+### 引用方式
+implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.0'
 
----屏幕适配,
+<dependency>
+  <groupId>com.chtj.mymoduleutil</groupId>
+  <artifactId>mymoduleutil</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+
+
+##屏幕适配,
 
 BaseActivity,
 BaseFragment,
@@ -23,13 +33,13 @@ NiceSpinner
         android:textSize="12sp" />
         
         
---设置数据源
+##设置数据源
 String[] spinnerItem=new String[]{"teacher","student","kids","women"};
 niceSpinner.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_selectable_list_item, spinnerItem));
   
 
---json转换
+##json转换
 -传入json数组返回集合对象
  String jsonStr="[{\"headImage\":\"back_1.png\",\"id\":\"1\",\"introduction\":\"my name is chtj...\",\"name\":\"chtj\",\"nickName\":\"chtj\",\"phone\":\"134-****-2606\",\"pwd\":\"123\"},{\"headImage\":\"back_1.png\",\"id\":\"2\",\"introduction\":\"my name is ctj...\",\"name\":\"ctj\",\"nickName\":\"ctj\",\"phone\":\"136-****-2606\",\"pwd\":\"123\"}]";
  
