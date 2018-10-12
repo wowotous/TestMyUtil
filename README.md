@@ -41,12 +41,12 @@ niceSpinner.setAdapter(new ArrayAdapter<String>(this,
   
 
 ### json转换
-    传入json数组返回集合对象
+    > 传入json数组返回集合对象
     String jsonStr="[{\"headImage\":\"back_1.png\",\"id\":\"1\",\"introduction\":\"my name is     chtj...\",\"name\":\"chtj\",\"nickName\":\"chtj\",\"phone\":\"134-****-2606\",\"pwd\":\"123\"},{\"headImage\":\"back_1.png\",\"id\":\"2\",\"introduction\":\"my name is ctj...\",\"name\":\"ctj\",\"nickName\":\"ctj\",\"phone\":\"136-****-2606\",\"pwd\":\"123\"}]";
     List<Userinfo> userinfoList =GsonUtil.jsonToArray(jsonStr,Userinfo[].class);
   
   
-    传入json字符串返回对象
+    > 传入json字符串返回对象
     String jsonBeanStr="{\"headImage\":\"back_1.png\",\"id\":\"3\",\"introduction\":\"my name is zs...\",\"name\":\"zs\",\"nickName\":\"zs\",\"phone\":\"136-***-2606\",\"pwd\":\"123\"}";
     Userinfo userinfos=GsonUtil.getBean(jsonBeanStr,Userinfo.class);
   
