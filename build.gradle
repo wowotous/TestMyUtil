@@ -16,8 +16,10 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenCentral()
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
     allprojects {
         gradle.projectsEvaluated {
@@ -26,6 +28,10 @@ allprojects {
 
                 options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"                       }
 
+        }
+        tasks.withType(Javadoc) {
+            options.addStringOption('Xdoclint:none', '-quiet')
+            options.addStringOption('encoding', 'UTF-8')
         }
     }
 
