@@ -1,8 +1,7 @@
 # TestMyUtil
 ## 引用方式
 
-[plain] 
-implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.2'
+> implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.2'
 
 <dependency>
   <groupId>com.chtj.mymoduleutil</groupId>
@@ -14,7 +13,7 @@ implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.2'
 
 ### 屏幕适配,
 
-BaseActivity,
+>> BaseActivity,
 BaseFragment,
 BaseFragmentV4,
 BaseFragmentActivity,
