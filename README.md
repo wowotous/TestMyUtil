@@ -1,11 +1,12 @@
 # TestMyUtil
 ### 引用方式
+
 implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.0'
 
 <dependency>
   <groupId>com.chtj.mymoduleutil</groupId>
   <artifactId>mymoduleutil</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 
