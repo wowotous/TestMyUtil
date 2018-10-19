@@ -1,9 +1,7 @@
 # TestMyUtil
 ## 引用方式
 
-> implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.2'
-
-git remote add origin https://github.com/_chtj_/mymoduleutil.git
+> implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.4'
 
 
 ### 屏幕适配,
