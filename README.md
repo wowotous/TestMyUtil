@@ -3,12 +3,7 @@
 
 > implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.2'
 
-<dependency>
-  <groupId>com.chtj.mymoduleutil</groupId>
-  <artifactId>mymoduleutil</artifactId>
-  <version>1.0.2</version>
-  <type>pom</type>
-</dependency>
+git remote add origin https://github.com/_chtj_/mymoduleutil.git
 
 
 ### 屏幕适配,
