@@ -11,7 +11,7 @@ BaseFragment,
 BaseFragmentV4,
 BaseFragmentActivity,
 
-可直接进行调用，无需配置
+可直接继承调用，无需配置
 
 ### 下拉菜单
     NiceSpinner
