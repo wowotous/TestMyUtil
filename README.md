@@ -11,7 +11,7 @@ BaseFragment,
 BaseFragmentV4,
 BaseFragmentActivity,
 
-可直接继承调用，无需配置
+可直接继承调用,设计尺寸720xp,android中使用控件使用设计图xp，无需其他配置
 
 ### 下拉菜单
     NiceSpinner
