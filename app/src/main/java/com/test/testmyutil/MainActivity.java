@@ -1,10 +1,9 @@
 package com.test.testmyutil;
 
 import android.Manifest;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,7 +12,6 @@ import android.widget.Button;
 
 import com.chtj.util.gson.GsonUtil;
 import com.chtj.util.nicespinner.NiceSpinner;
-import com.chtj.util.screen.base.BaseActivity;
 import com.chtj.util.screen.base.BasePermissionsActivity;
 import com.chtj.util.screen.util.ToastUtils;
 
@@ -21,7 +19,7 @@ import java.util.List;
 
 public class MainActivity extends BasePermissionsActivity {
     NiceSpinner niceSpinner;
-    Button btn_load,btn_permissions;
+    Button btn_load,btn_permissions,btn_blue;
     String[] spinnerItem=new String[]{"teacher","student","kids","women"};
     private final int PERMISSION_REQUEST_CODE = 1000;
 
@@ -42,6 +40,8 @@ public class MainActivity extends BasePermissionsActivity {
         btn_load=contentView.findViewById(R.id.btn_load);
         btn_load.setOnClickListener(this);
         btn_permissions=contentView.findViewById(R.id.btn_permissions);
+        btn_blue=contentView.findViewById(R.id.btn_blue);
+        btn_blue.setOnClickListener(this);
         btn_permissions.setOnClickListener(this);
         /**__下拉菜单 __**/
         niceSpinner=findViewById(R.id.tv_value);
@@ -83,23 +83,12 @@ public class MainActivity extends BasePermissionsActivity {
             case R.id.btn_permissions:
                 requestPermission(new String[]{Manifest.permission.CAMERA},PERMISSION_REQUEST_CODE);
                 break;
+            case R.id.btn_blue:
+                startActivity(new Intent(MainActivity.this,BlueActivity.class));
+                break;
         }
     }
 
-    /**
-     * 请求权限
-     * @param permissions
-     * @param requestCode
-     */
-    public void requestPermission(String[] permissions, int requestCode) {
-        this.REQUEST_CODE = requestCode;
-        //检查权限是否授权
-        if(checkPermissions(permissions)) {
-            permissionSucceed(REQUEST_CODE);
-        }else{
-            List<String> needPermissions = getPermissions(permissions);
-            ActivityCompat.requestPermissions(this, needPermissions.toArray(new String[needPermissions.size()]), REQUEST_CODE);
-        }
-    }
+
 
 }

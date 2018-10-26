@@ -108,6 +108,9 @@ public abstract class BasePermissionsActivity extends AppCompatActivity
     public static final String TAG = "BaseActivity";
     public static  int REQUEST_CODE = 0;
 
+
+
+
     /**
      * 请求权限
      * @param permissions
