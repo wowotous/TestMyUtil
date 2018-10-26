@@ -1,7 +1,7 @@
 # TestMyUtil
 ## 引用方式
 
-> implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.4'
+> implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.5'
 
 
 ### 屏幕适配,
