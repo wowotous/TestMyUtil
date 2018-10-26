@@ -1,9 +1,7 @@
 # TestMyUtil
 ## 引用方式
 
-> implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.2'
-
-git remote add origin https://github.com/_chtj_/mymoduleutil.git
+> implementation 'com.chtj.mymoduleutil:mymoduleutil:1.0.4'
 
 
 ### 屏幕适配,
@@ -13,7 +11,7 @@ BaseFragment,
 BaseFragmentV4,
 BaseFragmentActivity,
 
-可直接进行调用，无需配置
+可直接继承调用,设计尺寸720xp,android中使用控件使用设计图xp，无需其他配置
 
 ### 下拉菜单
     NiceSpinner
